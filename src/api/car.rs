@@ -12,14 +12,14 @@ use rand::Rng;
 use chrono::Datelike;
 
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize)]
 pub struct FuelUsageDetailsIdentifier {
     distance: u32,
     yearOfProduction: u32,
     fuelUsagePer100KM: u32,
 }
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize)]
 pub struct CarIdentifier {
     VIN: String,
 }
